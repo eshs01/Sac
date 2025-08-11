@@ -1,0 +1,10 @@
+{% extends "my/layout.html" %}
+{% block body %}
+<h1>Products</h1>
+{% for i in Products %}
+<li>{{ i.name }}</li>
+{% empty %}
+<h1>no product found </h1>
+{% endfor %}
+
+{% endblock %}
